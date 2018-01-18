@@ -1,4 +1,4 @@
-exports = function (string) {
+module.exports = function (string) {
   let characters = string.toLowerCase().split("");
   let length = characters.length;
   
