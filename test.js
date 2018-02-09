@@ -22,6 +22,4 @@ describe("the function", function() {
     assert.lengthOf(normalTest, normalTestText.length);
     assert.lengthOf(complexTest, complexTestText.length);
   });
-  
-  it("should 
 });
