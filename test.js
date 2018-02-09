@@ -1,7 +1,7 @@
 const chai = require('chai');
 const assert = chai.assert;
 
-const altcase = require("./index.js");
+const altCase = require("./index.js");
 
 const normalTestText = "Tests";
 const normalTest = altCase(normalTestText);
