@@ -4,9 +4,11 @@ This is a simple Node.js package that allows you to create strings that alternat
 
 Usage:
 
-    const altCase = require("alternating-case");
+```javascript
+const altCase = require("alternating-case");
 
-    altCase("hello"); // "HeLlO"
-    altcase("The quick, brown fox jumps over the lazy dog."); // "ThE QuIcK, bRoWn fOx jUmPs oVeR ThE LaZy dOg."
+altCase("hello"); // "HeLlO"
+altcase("The quick, brown fox jumps over the lazy dog."); // "ThE QuIcK, bRoWn fOx jUmPs oVeR ThE LaZy dOg."
+```
 
 Have fun!
