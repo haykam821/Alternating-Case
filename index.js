@@ -1,4 +1,4 @@
-module.exports = (input, capsOnOdds = false) => {
+module.exports = (input, capsOnOdds = true) => {
   const chars = input.split("");
   return chars.map((value, index) => {
     if (capsOnOdds) {
