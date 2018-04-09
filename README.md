@@ -26,12 +26,14 @@ altCase(input, capsOnOdds);
 
 `input` is the string you are trying to manipulate.
 
-While by default capital letters will be on even characters, you can make it capitalize odds instead by changing `capsOnOdds` to false.
+While by default capital letters will be on odd characters, you can make it capitalize even characters instead by changing `capsOnOdds` to false.
 
-Usage:
+## Examples
 
 ```javascript
 altCase("hello"); // "HeLlO"
+altCase("hello", false)
+
 altcase("The quick, brown fox jumps over the lazy dog."); // "ThE QuIcK, bRoWn fOx jUmPs oVeR ThE LaZy dOg."
 ```
 
