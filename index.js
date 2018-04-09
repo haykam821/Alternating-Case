@@ -1,9 +1,10 @@
-module.exports = function(string) {
-	const characters = string.toLowerCase().split("");
-	const length = characters.length;
-
-	for (let item = 0; item < length; item += 2) {
-		characters[item] = characters[item].toUpperCase();
-	}
-	return characters.join("");
-};
+module.exports = (input, capsOnOdds = false) => {
+  const chars = input.split("");
+  return chars.map((value, index) => {
+    if (capsOnOdds) {
+      return index % 2 ? value.toLowerCase() : value.toUpperCase();
+    } else {
+      return index % 2 ? value.toUpperCase() : value.toLowerCase();
+    }
+  }).join("");
+}
