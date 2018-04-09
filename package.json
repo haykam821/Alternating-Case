@@ -1,6 +1,6 @@
 {
   "name": "alternating-case",
-  "version": "1.1.1",
+  "version": "1.2.0",
   "description": "This is a simple Node.js package that allows you to create strings that alternate in case.",
   "main": "index.js",
   "scripts": {
