@@ -16,6 +16,18 @@ Afterwards, just require it and you can start using it:
 const altCase = require("alternating-case");
 ```
 
+## Documentation
+
+This package exports a function, used like so;
+
+```
+altCase(input, capsOnOdds);
+```
+
+`input` is the string you are trying to manipulate.
+
+While by default capital letters will be on even characters, you can make it capitalize odds instead by changing `capsOnOdds` to false.
+
 Usage:
 
 ```javascript
