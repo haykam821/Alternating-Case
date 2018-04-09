@@ -37,7 +37,7 @@ altCase("should we capitalize odd characters?"); // "ShOuLd wE CaPiTaLiZe oDd cH
 altCase("should we capitalize odd characters?", true); // "ShOuLd wE CaPiTaLiZe oDd cHaRaCtErS?"
 altCase("should we capitalize odd characters?", false); // "sHoUlD We cApItAlIzE OdD ChArAcTeRs?"
 
-altcase("The quick, brown fox jumps over the lazy dog."); // "ThE QuIcK, bRoWn fOx jUmPs oVeR ThE LaZy dOg."
+altCase("The quick, brown fox jumps over the lazy dog."); // "ThE QuIcK, bRoWn fOx jUmPs oVeR ThE LaZy dOg."
 
 altCase("Native methods ensure áccents are preserved."); // "NaTiVe mEtHoDs eNsUrE ÁcCeNtS ArE PrEsErVeD."
 ```
