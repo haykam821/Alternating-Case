@@ -20,7 +20,7 @@ const altCase = require("alternating-case");
 
 This package exports a function, used like so;
 
-```
+```js
 altCase(input, capsOnOdds);
 ```
 
