@@ -14,23 +14,21 @@ To start using this package, simply install from NPM:
 npm install alternating-case --save
 ```
 
-Afterwards, just require it and you can start using it:
+## Usage
+
+After installation, you can just require the package to use it:
 
 ```js
 const altCase = require("alternating-case");
 ```
 
-## Documentation
-
-This package exports a function, used like so;
+This package exports a single function:
 
 ```js
 altCase(input, capsOnOdds);
 ```
 
-`input` is the string you are trying to manipulate.
-
-While by default capital letters will be on odd characters, you can make it capitalize even characters instead by changing `capsOnOdds` to false.
+The first argument, `input` is the string you are trying to manipulate. While by default capital letters will be on odd characters, you can make it capitalize even characters instead by changing the second argument, `capsOnOdds`, to false.
 
 ## Examples
 
