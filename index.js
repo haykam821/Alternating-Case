@@ -6,7 +6,7 @@
  * @param {function} lowerCase The function to run to transform to lowercase.
  * @returns {string} An alternating-cased string.
  */
-function altCase(input, capsOnOdds = true, upperCase = String().toUpperCase, lowerCase = String().toLowerCase()) {
+function altCase(input, capsOnOdds = true, upperCase = String().toUpperCase, lowerCase = String().toLowerCase) {
 	const chars = input.split("");
 	return chars.map((value, index) => {
 		if (capsOnOdds) {
