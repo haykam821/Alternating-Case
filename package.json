@@ -32,5 +32,8 @@
 	"bugs": {
 		"url": "https://github.com/haykam821/alternating-case/issues"
 	},
-	"homepage": "https://github.com/haykam821/alternating-case#readme"
+	"homepage": "https://github.com/haykam821/alternating-case#readme",
+	"eslintConfig": {
+		"extends": "eslint-config-haykam"
+	}
 }
