@@ -7,6 +7,16 @@
  * @returns {string} An alternating-cased string.
  */
 function altCase(input, capsOnOdds = true, upperCase = String().toUpperCase, lowerCase = String().toLowerCase) {
+	if (typeof input !== "string") {
+		throw new TypeError("Input must be a string");
+	} else if (typeof capsOnOdds !== "boolean") {
+		throw new TypeError("capsOnOdds parameter must be a boolean");
+	} else if (typeof upperCase !== "function") {
+		throw new TypeError("upperCase parameter must be a function");
+	} else if (typeof lowerCase !== "function") {
+		throw new TypeError("lowerCase parameter must be a function");
+	}
+
 	const chars = [...input];
 	return chars.map((value, index) => {
 		if (capsOnOdds) {

@@ -25,6 +25,17 @@ describe("the function", function() {
 		assert.lengthOf(complexTest, complexTestText.length);
 	});
 
+	describe("input parameter", function() {
+		it("should throw when not a string", function() {
+			const values = [true, 1, null];
+			for (const value of values) {
+				assert.throws(() => {
+					altCase(value);
+				}, TypeError, "Input must be a string");
+			}
+		});
+	});
+
 	describe("capsOnOdds parameter", function() {
 		it("should default the capsOnOdds parameter to true", function() {
 			const text = "should we capitalize odd characters?";
@@ -33,6 +44,32 @@ describe("the function", function() {
 
 		it("should swap case when the capsOnOdds parameter is false", function() {
 			assert.strictEqual(altCase("Capitals on evens", false), "cApItAlS On eVeNs");
+		});
+
+		it("should throw when not a boolean", function() {
+			const values = ["", 1, null];
+			for (const value of values) {
+				assert.throws(() => {
+					altCase("", value);
+				}, TypeError, "capsOnOdds parameter must be a boolean");
+			}
+		});
+	});
+
+	describe("upperCase and lowerCase parameters", function() {
+		it("should throw when not a function", function() {
+			const values = ["", 1, null];
+
+			for (const value of values) {
+				assert.throws(() => {
+					altCase("", undefined, value);
+				}, TypeError, "upperCase parameter must be a function");
+			}
+			for (const value of values) {
+				assert.throws(() => {
+					altCase("", undefined, undefined, value);
+				}, TypeError, "lowerCase parameter must be a function");
+			}
 		});
 	});
 });
