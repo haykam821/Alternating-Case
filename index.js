@@ -7,7 +7,7 @@
  * @returns {string} An alternating-cased string.
  */
 function altCase(input, capsOnOdds = true, upperCase = String().toUpperCase, lowerCase = String().toLowerCase) {
-	const chars = input.split("");
+	const chars = [...input];
 	return chars.map((value, index) => {
 		if (capsOnOdds) {
 			return index % 2 ? lowerCase.apply(value) : upperCase.apply(value);
